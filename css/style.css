@@ -17,13 +17,18 @@ font-size: 2em;
 .nav-list ul{
     display: flex;
     list-style: none;
+    font-weight: 700;
 }
 .nav-list ul li{
     margin-right: 3em;
 }
+.nav-list ul li:hover{
+    color: orangered;
+    cursor: pointer;
+}
 
 .brand-slogaan{
-    margin: auto;
+margin: auto;
 text-align: center;
 padding: 2em 25em;
 }
@@ -78,6 +83,11 @@ margin-bottom: 0.5em;
     justify-content: center;
     gap: 0 1em;
 }
+.feature-name{
+    display: flex;
+    flex-direction: column;
+ 
+}
 .feature-title{
 display: flex;
 align-items: center;
@@ -109,7 +119,7 @@ margin-bottom: 1.5em;
     display: flex;
     align-items: center;
     color: white;
-    font-size: 2em;
+    font-size: 1.5em;
     position: relative;
     border-radius: 0.2em;
     top: -150px;
@@ -121,6 +131,9 @@ margin-bottom: 1.5em;
     row-gap: 2em;
     margin: 2em;
 }
+.facts-title h3, .sponsors h3{
+    font-size: 2em;
+}
 .awards-and-others{
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -129,8 +142,19 @@ margin-bottom: 1.5em;
 .factos{
     border: 1px solid orangered;
     border-radius: 0.5em;
-    padding: 2em;
+    padding: 1em 0.1em;
     text-align: center;
+}
+.factos .number{
+    font-size: 2em;
+    font-weight: 700;
+}
+.factos:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+    background: pink;
+   
 }
 .sponsors-container{
 
@@ -154,4 +178,56 @@ footer{
     font-size: 0.9em;
     color: red;
     margin-top: 2em;
+}
+
+@media screen and (max-width: 576px) {
+    nav{
+        display: block;
+    }
+    .nav-list ul{
+        display: block;
+    }
+    .brand-slogaan{
+        text-align: left;
+        padding: 0;
+        margin: 2em;
+    }
+    .architect-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .architect-img{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .features-container{
+        grid-template-columns: repeat(1,1fr);
+        justify-content: start;
+    }
+    
+    /* .feature-title{
+        align-items: start;
+      
+    } */
+
+    .feature-img img{
+        width: 100%;
+        margin-top: 4em;
+    }
+    .experience{
+        top: -100px;
+        right: -140px;
+    }
+    .facts-container{
+        grid-template-rows: repeat(1,1fr);
+    }
+    .awards-and-others{
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 1em;
+    }
+    .sponsors-img{
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 2em;
+    }
+    .sponsors-img img{
+        margin: auto;
+    }
 }
