@@ -1,233 +1,318 @@
  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-*{
-    margin:0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-}
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin:2em;
-}
-.brand-name h1{
-font-size: 2em;
-}
-.nav-list ul{
-    display: flex;
-    list-style: none;
-    font-weight: 700;
-}
-.nav-list ul li{
-    margin-right: 3em;
-}
-.nav-list ul li:hover{
-    color: orangered;
-    cursor: pointer;
-}
+ * {
+     margin: 0;
+     padding: 0;
+     font-family: 'Poppins', sans-serif;
+ }
 
-.brand-slogaan{
-margin: auto;
-text-align: center;
-padding: 2em 25em;
-}
-.brand-slogaan h1{
-    font-size: 3.5em;
-    margin-bottom: 0.5em;
-}
-.btn{
-    padding: 1em 3.5em ;
-    margin-top: 2em;
-    border: 0;
-    border-radius: 0.5em;
-    font-size: 1em;
-    color: white;
-    font-weight:  bold;
-    background: orange;
-}
-.btn:hover{
-    cursor: pointer;
-    background: orangered;
-}
-.banner{
-    margin: 2em;
-}
-.banner img{
-    width: 100%;
-}
-.architect-container{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    justify-content: center;
-    align-items: center;
-    gap: 0 3em;
-    margin: 4em;
-}
-.architect-img{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 0.5em 0.5em;
-}
-.features-talk h2{
-font-size: 4em;
-margin-bottom: 0.5em;
-}
-.features{
-    color: rgb(255, 162, 0);
-}
-.features-container{
-    margin: 2em;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    justify-content: center;
-    gap: 0 1em;
-}
-.feature-name{
-    display: flex;
-    flex-direction: column;
- 
-}
-.feature-title{
-display: flex;
-align-items: center;
-margin-bottom: 1.5em;
-}
-.feature-title h2{
-    font-size: 2.5em;
-    padding-left: 0.5em;
-    
-}
-.feature-title .side-line{
-    background: orange;
-    height: 8em;
-    width: 0.3em;
-}
-.feature-1, .feature-2,.feature-3, .feature-4{
-    margin: 2em 4em 2em 0;
-    box-shadow:5px 4px 2px rgba(0, 0, 0, 0.1);
-    padding: 1em;
-    border-radius: 0.5em;
-    height: 6em;
-    align-items: center;
-}
-.experience{
-    height: 5em;
-    width: 10em;
-    background: orange;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    color: white;
-    font-size: 1.5em;
-    position: relative;
-    border-radius: 0.2em;
-    top: -150px;
-    right: -450px;
-}
-.facts-container{
-    display: grid;
-    grid-template-rows: repeat(2,1fr);
-    row-gap: 2em;
-    margin: 2em;
-}
-.facts-title h3, .sponsors h3{
-    font-size: 2em;
-}
-.awards-and-others{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    column-gap: 2em;
-}
-.factos{
-    border: 1px solid orangered;
-    border-radius: 0.5em;
-    padding: 1em 0.1em;
-    text-align: center;
-}
-.factos .number{
-    font-size: 2em;
-    font-weight: 700;
-}
-.factos:hover{
-    transform: scale(1.1);
-    transition: 0.5s;
-    cursor: pointer;
-    background: pink;
-   
-}
-.sponsors-container{
+ nav {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin: 2em;
+ }
 
-}
-.sponsors{
-    text-align: center;
-    margin: 4em 0;
-}
-.sponsors-img{
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    
-}
-.sponsors-img img{
-    filter: grayscale(100%);
-}
-footer{
-    background: pink;
-    padding: 2em;
-    text-align: center;
-    font-size: 0.9em;
-    color: red;
-    margin-top: 2em;
-}
+ .brand-name h1 {
+     font-size: 2em;
+ }
 
-@media screen and (max-width: 576px) {
-    nav{
-        display: block;
-    }
-    .nav-list ul{
-        display: block;
-    }
-    .brand-slogaan{
-        text-align: left;
-        padding: 0;
-        margin: 2em;
-    }
-    .architect-container{
-        grid-template-columns: repeat(1,1fr);
-    }
-    .architect-img{
-        grid-template-columns: repeat(1,1fr);
-    }
-    .features-container{
-        grid-template-columns: repeat(1,1fr);
-        justify-content: start;
-    }
-    
-    /* .feature-title{
-        align-items: start;
-      
-    } */
+ .nav-list ul {
+     display: flex;
+     list-style: none;
+     font-weight: 700;
+ }
 
-    .feature-img img{
-        width: 100%;
-        margin-top: 4em;
-    }
-    .experience{
-        top: -100px;
-        right: -140px;
-    }
-    .facts-container{
-        grid-template-rows: repeat(1,1fr);
-    }
-    .awards-and-others{
-        grid-template-columns: repeat(1,1fr);
-        row-gap: 1em;
-    }
-    .sponsors-img{
-        grid-template-columns: repeat(1,1fr);
-        row-gap: 2em;
-    }
-    .sponsors-img img{
-        margin: auto;
-    }
-}
+ .nav-list ul li {
+     margin-right: 3em;
+ }
+
+ .nav-list ul li:hover {
+     color: orangered;
+     cursor: pointer;
+ }
+
+ .brand-slogaan {
+     margin: auto;
+     text-align: center;
+     padding: 2em 25em;
+ }
+
+ .brand-slogaan h1 {
+     font-size: 3.5em;
+     margin-bottom: 0.5em;
+ }
+
+ .btn {
+     padding: 1em 3.5em;
+     margin-top: 2em;
+     border: 0;
+     border-radius: 0.5em;
+     font-size: 1em;
+     color: white;
+     font-weight: bold;
+     background: orange;
+ }
+
+ .btn:hover {
+     cursor: pointer;
+     background: orangered;
+ }
+
+ .banner {
+     margin: 2em;
+ }
+
+ .banner img {
+     width: 100%;
+ }
+
+ .architect-container {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     justify-content: center;
+     align-items: center;
+     gap: 0 3em;
+     margin: 4em;
+ }
+
+ .architect-img {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 0.5em 0.5em;
+ }
+
+ .features-talk h2 {
+     font-size: 4em;
+     margin-bottom: 0.5em;
+ }
+
+ .features {
+     color: rgb(255, 162, 0);
+ }
+
+ .features-container {
+     margin: 2em;
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     justify-content: center;
+     gap: 0.2em;
+ }
+
+ .feature-name {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .feature-title {
+     display: flex;
+     align-items: center;
+     margin-bottom: 1.5em;
+ }
+
+ .feature-title h2 {
+     font-size: 2.5em;
+     padding-left: 0.5em;
+ }
+
+ .feature-title .side-line {
+     background: orange;
+     height: 8em;
+     width: 0.3em;
+ }
+
+ .feature-1,
+ .feature-2,
+ .feature-3,
+ .feature-4 {
+     margin: 2em 0;
+     box-shadow: 5px 4px 2px rgba(0, 0, 0, 0.1);
+     padding: 1em;
+     border-radius: 0.5em;
+     align-items: center;
+ }
+
+ .experience {
+     height: 5em;
+     width: 9em;
+     background: orange;
+     text-align: center;
+     display: flex;
+     align-items: center;
+     color: white;
+     font-size: 1.5em;
+     position: relative;
+     border-radius: 0.2em;
+     top: -100px;
+     right: -500px;
+ }
+
+ .facts-container {
+     display: grid;
+     grid-template-rows: repeat(2, 1fr);
+     row-gap: 2em;
+     margin: 2em;
+ }
+
+ .facts-title {
+     padding: 0 10em;
+     text-align: center;
+
+ }
+
+ .facts-title h3,
+ .sponsors h3 {
+     font-size: 2em;
+     text-align: center;
+ }
+
+ .awards-and-others {
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     column-gap: 2em;
+ }
+
+ .happy-clients {
+     font-size: 2em;
+     text-align: center;
+ }
+
+ .client-says {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     column-gap: 2em;
+     margin: 2em;
+ }
+
+ .testimonials {
+     display: flex;
+     /* justify-content: center; */
+     align-items: center;
+     gap: 2em;
+     box-shadow: 5px 4px 2px rgba(0, 0, 0, 0.1);
+     padding: 1em 2em;
+     border-radius: 0.5em;
+     background: rgb(253, 252, 252);
+
+ }
+
+ .client-img img {
+     width: 100%;
+ }
+
+ .factos {
+     border: 1px solid orangered;
+     border-radius: 0.5em;
+     padding: 1em 0.1em;
+     text-align: center;
+ }
+
+ .factos .number {
+     font-size: 2em;
+     font-weight: 700;
+ }
+
+ .factos:hover {
+     transform: scale(1.1);
+     transition: 0.5s;
+     cursor: pointer;
+     background: rgba(255, 192, 203, 0.579);
+ }
+
+ .sponsors {
+     text-align: center;
+     margin: 4em 0;
+ }
+
+ .sponsors-img {
+     display: grid;
+     grid-template-columns: repeat(5, 1fr);
+
+ }
+
+ .sponsors-img img {
+     filter: grayscale(100%);
+ }
+
+ footer {
+     background: pink;
+     padding: 2em;
+     text-align: center;
+     font-size: 0.9em;
+     font-weight: 700;
+     color: black;
+     margin-top: 2em;
+ }
+
+ @media screen and (max-width: 576px) {
+     nav {
+         display: block;
+     }
+
+     .nav-list ul {
+         display: block;
+     }
+
+     .brand-slogaan {
+         text-align: left;
+         padding: 0;
+         margin: 2em;
+     }
+
+     .architect-container {
+         grid-template-columns: repeat(1, 1fr);
+     }
+
+     .architect-img {
+         grid-template-columns: repeat(1, 1fr);
+     }
+
+     .features-container {
+         grid-template-columns: repeat(1, 1fr);
+         justify-content: start;
+     }
+
+     .feature-img img {
+         width: 100%;
+         margin-top: 4em;
+     }
+
+     .experience {
+         top: -100px;
+         right: -140px;
+     }
+     .facts-title {
+        padding: 2em;
+        text-align: center;
+     }
+     .client-says {
+         grid-template-columns: repeat(1, 1fr);
+         row-gap: 2em;
+     }
+
+     .testimonials {
+         display: block;
+     }
+     .client-img img {
+        width: 30%;
+        margin-bottom: 2em;
+     }
+
+     .facts-container {
+         grid-template-rows: repeat(1, 1fr);
+     }
+
+     .awards-and-others {
+         grid-template-columns: repeat(1, 1fr);
+         row-gap: 1em;
+     }
+
+     .sponsors-img {
+         grid-template-columns: repeat(1, 1fr);
+         row-gap: 2em;
+     }
+
+     .sponsors-img img {
+         margin: auto;
+     }
+ }
